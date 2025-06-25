@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Agent</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    select, button {
+      font-size: 16px;
+      padding: 8px 12px;
+      margin-top: 10px;
+    }
+
+    #questionBox {
+      margin-top: 30px;
+      padding: 20px;
+      background: #eef2f3;
+      border-left: 5px solid #4285f4;
+      font-size: 18px;
+    }
+
+    #recorder {
+      margin-top: 20px;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      background-color: #4285f4;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3367d6;
+    }
+
+    #statusText {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🗣️ Voice Agent Demo</h2>
+
+    <label for="languageSelect"><strong>Select Language:</strong></label>
+    <select id="languageSelect">
+      <option value="en" selected>English</option>
+      <option value="hi">Hindi</option>
+    </select>
+
+    <br /><br />
+    <button onclick="startInteraction()">Start Questionnaire</button>
+
+    <div id="questionBox"></div>
+    <div id="recorder"></div>
+    <p id="statusText"></p>
+    <br /><br />
+    <button onclick="fetchAnswers()">📋 Fetch My Answers</button>
+    <div id="answersBox" style="margin-top: 20px;"></div>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

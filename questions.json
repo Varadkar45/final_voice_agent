@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "text_en": "What is your full name?",
+    "text_hi": "आपका पूरा नाम क्या है?"
+  },
+  {
+    "id": 2,
+    "text_en": "What is your age?",
+    "text_hi": "आपकी उम्र क्या है?"
+  },
+  {
+    "id": 3,
+    "text_en": "What symptoms are you experiencing today?",
+    "text_hi": "आज आप किन लक्षणों का अनुभव कर रहे हैं?"
+  },
+  {
+    "id": 4,
+    "text_en": "Do you have any existing medical conditions?",
+    "text_hi": "क्या आपको कोई मौजूदा चिकित्सीय स्थिति है?"
+  },
+  {
+    "id": 5,
+    "text_en": "Are you currently taking any medications?",
+    "text_hi": "क्या आप वर्तमान में कोई दवाएं ले रहे हैं?"
+  }
+]
